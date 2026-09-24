@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>קופה ותשלום | ORIGINALZ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">ORIGINALZ</a>
+            <div class="header-actions">
+                <span style="color: #6c757d;"><i class="fas fa-lock"></i> תשלום מאובטח</span>
+            </div>
+        </div>
+    </header>
+
+    <div style="background: var(--background-color); padding: 4rem 2rem;">
+        <div style="max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr; gap: 2rem;">
+            
+            <!-- פרטי משלוח ותשלום -->
+            <div class="table-container">
+                <h2 style="margin-bottom: 2rem;">פרטי משלוח</h2>
+                <form action="index.html">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div class="form-group">
+                            <label>שם פרטי *</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>שם משפחה *</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>כתובת אימייל *</label>
+                        <input type="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>מספר טלפון *</label>
+                        <input type="tel" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>עיר / ישוב *</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>כתובת מדויקת (רחוב, מספר בית, דירה) *</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+
+                    <h2 style="margin-bottom: 2rem; margin-top: 3rem;">אמצעי תשלום</h2>
+                    <div style="border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem;">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <input type="radio" name="payment" id="credit" checked>
+                            <label for="credit" style="margin: 0; font-weight: bold; cursor: pointer;">כרטיס אשראי</label>
+                            <div style="margin-right: auto; display: flex; gap: 0.5rem; color: #AAA; font-size: 1.5rem;">
+                                <i class="fab fa-cc-visa"></i>
+                                <i class="fab fa-cc-mastercard"></i>
+                                <i class="fab fa-cc-amex"></i>
+                            </div>
+                        </div>
+                        <div style="background: #f8f9fa; padding: 1rem; border-radius: 4px; margin-top: 1rem;">
+                            <div class="form-group">
+                                <label>מספר כרטיס</label>
+                                <input type="text" class="form-control" placeholder="0000 0000 0000 0000">
+                            </div>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                                <div class="form-group">
+                                    <label>תוקף (MM/YY)</label>
+                                    <input type="text" class="form-control" placeholder="MM/YY">
+                                </div>
+                                <div class="form-group">
+                                    <label>CVV</label>
+                                    <input type="text" class="form-control" placeholder="123">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn" style="width: 100%; margin-top: 2rem; padding: 1.25rem; font-size: 1.25rem;">שלם עכשיו (₪498)</button>
+                </form>
+            </div>
+
+            <!-- סיכום הזמנה -->
+            <div>
+                <div class="table-container" style="position: sticky; top: 100px;">
+                    <h3 style="margin-bottom: 1.5rem;">סיכום הזמנה</h3>
+                    
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; border-bottom: 1px solid #eee; padding-bottom: 1rem;">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80" alt="Product" style="width: 50px; border-radius: 4px;">
+                        <div>
+                            <div style="font-weight: bold;">אוזניות פרימיום</div>
+                            <div style="font-size: 0.9rem; color: var(--text-muted);">כמות: 1</div>
+                        </div>
+                        <div style="margin-right: auto; font-weight: bold;">₪299</div>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; border-bottom: 1px solid #eee; padding-bottom: 1rem;">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80" alt="Product" style="width: 50px; border-radius: 4px;">
+                        <div>
+                            <div style="font-weight: bold;">נעלי ספורט אורטופדיות</div>
+                            <div style="font-size: 0.9rem; color: var(--text-muted);">כמות: 1</div>
+                        </div>
+                        <div style="margin-right: auto; font-weight: bold;">₪199</div>
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <span>ביניים:</span>
+                        <span>₪498</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                        <span>משלוח (שליח עד הבית):</span>
+                        <span style="color: var(--accent-color);">חינם!</span>
+                    </div>
+                    <hr style="border: none; border-top: 1px solid var(--border-color); margin: 1rem 0;">
+                    <div style="display: flex; justify-content: space-between; font-size: 1.5rem; font-weight: bold;">
+                        <span>סה"כ:</span>
+                        <span>₪498</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

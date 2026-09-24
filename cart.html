@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>עגלת קניות | ORIGINALZ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">ORIGINALZ</a>
+            <nav class="nav-links">
+                <a href="index.html">דף הבית</a>
+                <a href="categories.html">קטגוריות</a>
+                <a href="shop.html">חנות</a>
+            </nav>
+            <div class="header-actions">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="cart.html" class="cart-icon" style="color: var(--accent-color);">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">2</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div style="background: var(--background-color); padding: 4rem 2rem;">
+        <div style="max-width: 1000px; margin: 0 auto;">
+            <h1 style="margin-bottom: 2rem;">עגלת הקניות שלך</h1>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>מוצר</th>
+                            <th>מחיר</th>
+                            <th>כמות</th>
+                            <th>סה"כ</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="display: flex; align-items: center; gap: 1rem;">
+                                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80" alt="Product" style="width: 80px; border-radius: 4px;">
+                                <span>אוזניות פרימיום</span>
+                            </td>
+                            <td>₪299</td>
+                            <td>
+                                <input type="number" value="1" min="1" class="form-control" style="width: 60px;">
+                            </td>
+                            <td>₪299</td>
+                            <td><a href="#" style="color: var(--accent-color);"><i class="fas fa-trash"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td style="display: flex; align-items: center; gap: 1rem;">
+                                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80" alt="Product" style="width: 80px; border-radius: 4px;">
+                                <span>נעלי ספורט אורטופדיות</span>
+                            </td>
+                            <td>₪199</td>
+                            <td>
+                                <input type="number" value="1" min="1" class="form-control" style="width: 60px;">
+                            </td>
+                            <td>₪199</td>
+                            <td><a href="#" style="color: var(--accent-color);"><i class="fas fa-trash"></i></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="cart-total">
+                    <p>סה"כ ביניים: ₪498</p>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">משלוח יחושב בקופה</p>
+                    <hr style="margin: 1rem 0; border: none; border-top: 1px solid var(--border-color);">
+                    <h3 style="color: var(--primary-color);">סה"כ לתשלום: ₪498</h3>
+                    <div style="margin-top: 2rem; display: flex; justify-content: flex-end;">
+                        <a href="checkout.html" class="btn" style="padding: 1rem 3rem; font-size: 1.1rem;">המשך לתשלום <i class="fas fa-arrow-left" style="margin-right: 0.5rem;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3 class="logo" style="color: white;">ORIGINALZ</h3>
+            </div>
+            <div class="footer-col">
+                <h3>קישורים מהירים</h3>
+                <ul>
+                    <li><a href="index.html">דף הבית</a></li>
+                    <li><a href="shop.html">כל המוצרים</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>שירות לקוחות</h3>
+                <ul>
+                    <li><a href="#">תקנון האתר</a></li>
+                    <li><a href="#">מדיניות משלוחים והחזרות</a></li>
+                    <li><a href="#">צור קשר</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
