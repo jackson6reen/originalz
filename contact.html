@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Ori9inalz</title>
+  <meta name="description" content="Contact the Ori9inalz team. We typically respond within 4 business hours.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="announcement-bar"><span>★ AVERAGE RESPONSE TIME: 4 BUSINESS HOURS ★</span></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <nav class="nav-left">
+        <a href="shop.html">Shop All</a>
+        <a href="categories.html">Collections</a>
+        <a href="about.html">Our Craft</a>
+      </nav>
+      <a href="index.html" class="site-logo">ORI9INALZ</a>
+      <div class="nav-right">
+        <a href="cart.html" class="icon-btn" aria-label="Cart">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-badge" style="display:none;">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">We're Here to Help</span>
+      <h1 class="section-title" style="color: var(--white);">CONTACT</h1>
+      <p>The Ori9inalz team responds within 4 business hours.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 860px;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px;">
+        <div>
+          <span class="section-label">Send a Message</span>
+          <h2 class="section-title" style="font-size: 40px;">GET IN TOUCH</h2>
+          <form class="mt-32" id="contact-form" onsubmit="handleContact(event)">
+            <div class="form-group">
+              <label for="c-name">Full Name *</label>
+              <input type="text" id="c-name" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="c-email">Email Address *</label>
+              <input type="email" id="c-email" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="c-order">Order Number (Optional)</label>
+              <input type="text" id="c-order" class="form-control" placeholder="ORI9-XXXXX">
+            </div>
+            <div class="form-group">
+              <label for="c-msg">Message *</label>
+              <textarea id="c-msg" class="form-control" rows="5" required style="resize: vertical;"></textarea>
+            </div>
+            <button type="submit" class="btn btn-black" style="width: 100%; padding: 16px;">Send Message</button>
+          </form>
+        </div>
+        <div style="padding-top: 80px;">
+          <div style="margin-bottom: 40px;">
+            <p style="font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px;">Email</p>
+            <a href="mailto:support@ori9inalz.com" style="font-size: 16px; font-weight: 600;">support@ori9inalz.com</a>
+          </div>
+          <div style="margin-bottom: 40px;">
+            <p style="font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px;">WhatsApp</p>
+            <a href="https://wa.me/19720000000" target="_blank" rel="noopener" style="font-size: 16px; font-weight: 600;">+1 (972) 000-0000</a>
+          </div>
+          <div style="margin-bottom: 40px;">
+            <p style="font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px;">Hours</p>
+            <p style="font-size: 15px;">Monday – Friday: 9am – 6pm EST<br>Saturday: 10am – 3pm EST</p>
+          </div>
+          <div>
+            <p style="font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px;">Follow</p>
+            <div style="display: flex; gap: 16px;">
+              <a href="https://instagram.com/ori9inalz" target="_blank" rel="noopener" style="font-size: 22px;"><i class="fab fa-instagram"></i></a>
+              <a href="https://tiktok.com/@ori9inalz" target="_blank" rel="noopener" style="font-size: 22px;"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand"><a href="index.html" class="site-logo">ORI9INALZ</a></div>
+          <div class="footer-col"><h4>Shop</h4><ul><li><a href="shop.html">All Products</a></li><li><a href="categories.html">Collections</a></li></ul></div>
+          <div class="footer-col"><h4>Legal</h4><ul><li><a href="terms.html">Terms</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="returns.html">Returns</a></li><li><a href="shipping.html">Shipping</a></li></ul></div>
+          <div class="footer-col"><h4>Support</h4><ul><li><a href="contact.html">Contact</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+        </div>
+      </div>
+    </div>
+    <div class="container"><div class="footer-bottom"><p>© 2026 Ori9inalz. All rights reserved.</p></div></div>
+  </footer>
+
+  <a href="https://wa.me/19720000000" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+  <script src="app.js"></script>
+  <script>
+    function handleContact(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button[type="submit"]');
+      btn.textContent = 'Message Sent ✓';
+      btn.style.background = '#22c55e';
+      e.target.reset();
+      setTimeout(() => { btn.textContent = 'Send Message'; btn.style.background = ''; }, 4000);
+    }
+  </script>
+</body>
+</html>

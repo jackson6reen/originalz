@@ -1,131 +1,194 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>קופה ותשלום | ORIGINALZ</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Checkout — Ori9inalz</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-    <header>
-        <div class="header-container">
-            <a href="index.html" class="logo">ORIGINALZ</a>
-            <div class="header-actions">
-                <span style="color: #6c757d;"><i class="fas fa-lock"></i> תשלום מאובטח</span>
-            </div>
-        </div>
-    </header>
-
-    <div style="background: var(--background-color); padding: 4rem 2rem;">
-        <div style="max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr; gap: 2rem;">
-            
-            <!-- פרטי משלוח ותשלום -->
-            <div class="table-container">
-                <h2 style="margin-bottom: 2rem;">פרטי משלוח</h2>
-                <form action="index.html">
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                        <div class="form-group">
-                            <label>שם פרטי *</label>
-                            <input type="text" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label>שם משפחה *</label>
-                            <input type="text" class="form-control" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label>כתובת אימייל *</label>
-                        <input type="email" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label>מספר טלפון *</label>
-                        <input type="tel" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label>עיר / ישוב *</label>
-                        <input type="text" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label>כתובת מדויקת (רחוב, מספר בית, דירה) *</label>
-                        <input type="text" class="form-control" required>
-                    </div>
-
-                    <h2 style="margin-bottom: 2rem; margin-top: 3rem;">אמצעי תשלום</h2>
-                    <div style="border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem;">
-                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                            <input type="radio" name="payment" id="credit" checked>
-                            <label for="credit" style="margin: 0; font-weight: bold; cursor: pointer;">כרטיס אשראי</label>
-                            <div style="margin-right: auto; display: flex; gap: 0.5rem; color: #AAA; font-size: 1.5rem;">
-                                <i class="fab fa-cc-visa"></i>
-                                <i class="fab fa-cc-mastercard"></i>
-                                <i class="fab fa-cc-amex"></i>
-                            </div>
-                        </div>
-                        <div style="background: #f8f9fa; padding: 1rem; border-radius: 4px; margin-top: 1rem;">
-                            <div class="form-group">
-                                <label>מספר כרטיס</label>
-                                <input type="text" class="form-control" placeholder="0000 0000 0000 0000">
-                            </div>
-                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                                <div class="form-group">
-                                    <label>תוקף (MM/YY)</label>
-                                    <input type="text" class="form-control" placeholder="MM/YY">
-                                </div>
-                                <div class="form-group">
-                                    <label>CVV</label>
-                                    <input type="text" class="form-control" placeholder="123">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <button type="submit" class="btn" style="width: 100%; margin-top: 2rem; padding: 1.25rem; font-size: 1.25rem;">שלם עכשיו (₪498)</button>
-                </form>
-            </div>
-
-            <!-- סיכום הזמנה -->
-            <div>
-                <div class="table-container" style="position: sticky; top: 100px;">
-                    <h3 style="margin-bottom: 1.5rem;">סיכום הזמנה</h3>
-                    
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; border-bottom: 1px solid #eee; padding-bottom: 1rem;">
-                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80" alt="Product" style="width: 50px; border-radius: 4px;">
-                        <div>
-                            <div style="font-weight: bold;">אוזניות פרימיום</div>
-                            <div style="font-size: 0.9rem; color: var(--text-muted);">כמות: 1</div>
-                        </div>
-                        <div style="margin-right: auto; font-weight: bold;">₪299</div>
-                    </div>
-
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; border-bottom: 1px solid #eee; padding-bottom: 1rem;">
-                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80" alt="Product" style="width: 50px; border-radius: 4px;">
-                        <div>
-                            <div style="font-weight: bold;">נעלי ספורט אורטופדיות</div>
-                            <div style="font-size: 0.9rem; color: var(--text-muted);">כמות: 1</div>
-                        </div>
-                        <div style="margin-right: auto; font-weight: bold;">₪199</div>
-                    </div>
-
-                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
-                        <span>ביניים:</span>
-                        <span>₪498</span>
-                    </div>
-                    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
-                        <span>משלוח (שליח עד הבית):</span>
-                        <span style="color: var(--accent-color);">חינם!</span>
-                    </div>
-                    <hr style="border: none; border-top: 1px solid var(--border-color); margin: 1rem 0;">
-                    <div style="display: flex; justify-content: space-between; font-size: 1.5rem; font-weight: bold;">
-                        <span>סה"כ:</span>
-                        <span>₪498</span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+  <!-- Minimal Checkout Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div></div>
+      <a href="index.html" class="site-logo">ORI9INALZ</a>
+      <div style="display: flex; align-items: center; gap: 8px; color: rgba(255,255,255,0.45); font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;">
+        <i class="fas fa-lock" style="color: var(--gold);"></i> Secure Checkout
+      </div>
     </div>
+  </header>
 
+  <section class="section" style="background: var(--off-white);">
+    <div class="container">
+      <div class="checkout-layout">
+
+        <!-- Left: Forms -->
+        <div>
+          <form id="checkout-form" novalidate>
+            <!-- Contact -->
+            <div class="form-section">
+              <h3>Contact Information</h3>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" class="form-control" placeholder="your@email.com" required autocomplete="email">
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" class="form-control" placeholder="+1 (555) 000-0000" required autocomplete="tel">
+              </div>
+            </div>
+
+            <!-- Shipping -->
+            <div class="form-section">
+              <h3>Shipping Address</h3>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="first-name">First Name *</label>
+                  <input type="text" id="first-name" class="form-control" required autocomplete="given-name">
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Last Name *</label>
+                  <input type="text" id="last-name" class="form-control" required autocomplete="family-name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="address1">Street Address *</label>
+                <input type="text" id="address1" class="form-control" placeholder="123 Main Street" required autocomplete="address-line1">
+              </div>
+              <div class="form-group">
+                <label for="address2">Apt / Suite / Floor (Optional)</label>
+                <input type="text" id="address2" class="form-control" autocomplete="address-line2">
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="city">City *</label>
+                  <input type="text" id="city" class="form-control" required autocomplete="address-level2">
+                </div>
+                <div class="form-group">
+                  <label for="state">State *</label>
+                  <select id="state" class="form-control form-select" required autocomplete="address-level1">
+                    <option value="">Select State</option>
+                    <option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option><option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option><option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option><option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option><option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option><option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option><option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option><option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option><option>New York</option><option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option><option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option><option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option><option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option><option>Wisconsin</option><option>Wyoming</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="zip">ZIP Code *</label>
+                <input type="text" id="zip" class="form-control" placeholder="10001" required autocomplete="postal-code" maxlength="10">
+              </div>
+            </div>
+
+            <!-- Payment -->
+            <div class="form-section">
+              <h3>Payment Method</h3>
+
+              <div class="payment-option selected">
+                <input type="radio" name="payment" id="pay-card" value="card" checked>
+                <label for="pay-card" style="font-weight: 600; cursor: pointer;">Credit / Debit Card</label>
+                <div class="payment-icons">
+                  <i class="fab fa-cc-visa"></i>
+                  <i class="fab fa-cc-mastercard"></i>
+                  <i class="fab fa-cc-amex"></i>
+                </div>
+              </div>
+              <div class="card-field-group">
+                <div class="form-group">
+                  <label for="card-number">Card Number *</label>
+                  <input type="text" id="card-number" class="form-control" placeholder="1234 5678 9012 3456" maxlength="19" autocomplete="cc-number">
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="card-expiry">Expiry Date *</label>
+                    <input type="text" id="card-expiry" class="form-control" placeholder="MM / YY" maxlength="7" autocomplete="cc-exp">
+                  </div>
+                  <div class="form-group">
+                    <label for="card-cvv">CVV *</label>
+                    <input type="text" id="card-cvv" class="form-control" placeholder="123" maxlength="4" autocomplete="cc-csc">
+                  </div>
+                </div>
+              </div>
+
+              <div class="payment-option" style="margin-top: 12px;">
+                <input type="radio" name="payment" id="pay-paypal" value="paypal">
+                <label for="pay-paypal" style="font-weight: 600; cursor: pointer;">PayPal</label>
+                <div class="payment-icons"><i class="fab fa-cc-paypal"></i></div>
+              </div>
+              <div class="payment-option">
+                <input type="radio" name="payment" id="pay-apple" value="apple">
+                <label for="pay-apple" style="font-weight: 600; cursor: pointer;">Apple Pay</label>
+                <div class="payment-icons"><i class="fab fa-apple-pay"></i></div>
+              </div>
+
+              <div style="display: flex; align-items: center; gap: 6px; margin-top: 20px; font-size: 12px; color: var(--light-grey);">
+                <i class="fas fa-lock" style="color: var(--gold);"></i>
+                Your payment information is encrypted and secure. We never store your card details.
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-gold" style="width: 100%; padding: 20px; font-size: 15px; letter-spacing: 0.1em;">
+              <i class="fas fa-lock"></i>&nbsp; Place Order — $527.04
+            </button>
+
+            <p style="text-align: center; font-size: 12px; color: var(--light-grey); margin-top: 16px;">
+              By placing your order you agree to our <a href="terms.html" style="color: var(--black);">Terms of Service</a> and <a href="privacy.html" style="color: var(--black);">Privacy Policy</a>.
+            </p>
+          </form>
+        </div>
+
+        <!-- Right: Order Summary -->
+        <div>
+          <div class="order-summary-card">
+            <h3>Your Order</h3>
+
+            <div style="display: flex; gap: 14px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid var(--border-dark); align-items: flex-start;">
+              <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=100&q=70" alt="The Obsidian" style="width: 60px; height: 60px; object-fit: cover; border-radius: 2px; border: 1px solid var(--border-dark);">
+              <div style="flex: 1;">
+                <p style="font-weight: 600; font-size: 13px;">The Obsidian</p>
+                <p style="font-size: 12px; color: var(--light-grey);">Jet Black / S/M — Qty: 1</p>
+              </div>
+              <strong>$189</strong>
+            </div>
+
+            <div style="display: flex; gap: 14px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid var(--border-dark); align-items: flex-start;">
+              <img src="https://images.unsplash.com/photo-1529958030586-3aae4ca485ff?auto=format&fit=crop&w=100&q=70" alt="The Heritage" style="width: 60px; height: 60px; object-fit: cover; border-radius: 2px; border: 1px solid var(--border-dark);">
+              <div style="flex: 1;">
+                <p style="font-weight: 600; font-size: 13px;">The Heritage</p>
+                <p style="font-size: 12px; color: var(--light-grey);">Cognac / L/XL — Qty: 1</p>
+              </div>
+              <strong>$299</strong>
+            </div>
+
+            <div class="summary-line"><span>Subtotal</span><span>$488.00</span></div>
+            <div class="summary-line"><span>Shipping</span><span class="summary-shipping">FREE</span></div>
+            <div class="summary-line"><span>Tax (8%)</span><span>$39.04</span></div>
+            <div class="summary-line total"><span>Total</span><span>$527.04</span></div>
+
+            <div style="margin-top: 20px; padding: 14px; background: var(--off-white); border-radius: 2px; font-size: 12px; color: var(--mid-grey); line-height: 1.6;">
+              <i class="fas fa-shield-halved" style="color: var(--gold); margin-right: 6px;"></i>
+              <strong>Lifetime Warranty</strong> included with every Ori9inalz purchase. 30-day free returns.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 Ori9inalz. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="returns.html">Returns Policy</a>
+          <a href="shipping.html">Shipping</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>

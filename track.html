@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track My Order — Ori9inalz</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="announcement-bar"><span>★ ALL ORDERS SHIP WITHIN 24 HOURS ★</span></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <nav class="nav-left">
+        <a href="shop.html">Shop All</a>
+        <a href="categories.html">Collections</a>
+        <a href="about.html">Our Craft</a>
+      </nav>
+      <a href="index.html" class="site-logo">ORI9INALZ</a>
+      <div class="nav-right">
+        <a href="cart.html" class="icon-btn" aria-label="Cart">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-badge" style="display:none;">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">Where Is My Order?</span>
+      <h1 class="section-title" style="color: var(--white);">TRACK ORDER</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 560px;">
+      <div class="form-section">
+        <h3>Enter Your Details</h3>
+        <div class="form-group">
+          <label for="track-order">Order Number *</label>
+          <input type="text" id="track-order" class="form-control" placeholder="ORI9-XXXXX" required>
+        </div>
+        <div class="form-group">
+          <label for="track-email">Email Address *</label>
+          <input type="email" id="track-email" class="form-control" placeholder="your@email.com" required>
+        </div>
+        <button class="btn btn-black" style="width: 100%; padding: 16px;" onclick="handleTrack()">Track Order</button>
+        <p style="margin-top: 16px; font-size: 13px; color: var(--light-grey);">Can't find your order? Contact us at <a href="mailto:support@ori9inalz.com">support@ori9inalz.com</a></p>
+      </div>
+      <div id="track-result" style="display: none;" class="form-section">
+        <div style="text-align: center; padding: 24px 0;">
+          <div style="font-size: 48px; color: var(--gold); margin-bottom: 16px;"><i class="fas fa-truck-fast"></i></div>
+          <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 8px;">Your Order is On Its Way!</h3>
+          <p style="font-size: 14px; color: var(--light-grey); margin-bottom: 24px;">Estimated delivery: <strong style="color: var(--black);">2–4 business days</strong></p>
+          <a href="https://www.usps.com/manage/informed-delivery.htm" class="btn btn-black" target="_blank" rel="noopener" style="padding: 12px 24px; font-size: 12px;">View Full Tracking →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand"><a href="index.html" class="site-logo">ORI9INALZ</a></div>
+          <div class="footer-col"><h4>Shop</h4><ul><li><a href="shop.html">All Products</a></li><li><a href="categories.html">Collections</a></li></ul></div>
+          <div class="footer-col"><h4>Legal</h4><ul><li><a href="terms.html">Terms</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="returns.html">Returns</a></li></ul></div>
+          <div class="footer-col"><h4>Support</h4><ul><li><a href="contact.html">Contact</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+        </div>
+      </div>
+    </div>
+    <div class="container"><div class="footer-bottom"><p>© 2026 Ori9inalz. All rights reserved.</p></div></div>
+  </footer>
+  <script src="app.js"></script>
+  <script>
+    function handleTrack() {
+      const order = document.getElementById('track-order').value;
+      const email = document.getElementById('track-email').value;
+      if (!order || !email) { alert('Please fill in both fields.'); return; }
+      document.getElementById('track-result').style.display = 'block';
+      document.getElementById('track-result').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
