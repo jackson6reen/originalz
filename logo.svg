@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Originalz Signature Mark</title>
+  <desc id="desc">Refined circular Originalz monogram with a flowing tapered signature stroke.</desc>
+  <g fill="#FFFFFF">
+    <!-- Optical ring: slightly wider at the lower-left/lower-right to hold up in embroidery -->
+    <path fill-rule="evenodd" d="
+      M256 82
+      C159.90 82 82 159.90 82 256
+      C82 352.10 159.90 430 256 430
+      C352.10 430 430 352.10 430 256
+      C430 159.90 352.10 82 256 82 Z
+
+      M256 123
+      C182.55 123 123 182.55 123 256
+      C123 329.45 182.55 389 256 389
+      C329.45 389 389 329.45 389 256
+      C389 182.55 329.45 123 256 123 Z"/>
+
+    <!-- Signature stroke. Starts inside the lower-left ring, rises smoothly through the bowl,
+         crosses the right edge and resolves into a clean upward tapered terminal. -->
+    <path d="
+      M126 355
+      C153 319 181 285 216 260
+      C250 236 286 221 326 220
+      C354 219 375 224 395 218
+      C418 211 438 194 458 170
+      C461 166 466 168 465 174
+      C462 205 451 230 432 247
+      C413 264 389 272 360 271
+      L326 270
+      C294 270 266 280 240 298
+      C210 319 186 346 163 378
+      C151 374 138 366 126 355 Z"/>
+  </g>
+</svg>
